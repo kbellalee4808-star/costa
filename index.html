@@ -94,10 +94,10 @@
     flex: 1;
     background: none;
     border: none;
-    padding: 14px 8px;
+    padding: 12px 4px;
     color: rgba(255,255,255,0.5);
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.78rem;
     font-weight: 700;
     cursor: pointer;
     border-bottom: 3px solid transparent;
@@ -400,6 +400,9 @@
   <button class="tab-btn active" onclick="showTab('ship')">
     <span class="tab-icon">🚢</span>배 생활
   </button>
+  <button class="tab-btn" onclick="showTab('busan')">
+    <span class="tab-icon">🇰🇷</span>부산
+  </button>
   <button class="tab-btn" onclick="showTab('keelung')">
     <span class="tab-icon">🇹🇼</span>기륭
   </button>
@@ -549,12 +552,189 @@
   <div class="big-tip">
     <div class="big-tip-icon">📞</div>
     <div class="big-tip-title">급할 때는?</div>
-    <div class="big-tip-text">객실 전화로 "0" 누르면 프런트 연결<br>의무실은 Deck 5 (선내 지도 참고)<br>한국어 가이드가 동행하는 경우 가이드에게 먼저 연락</div>
+    <div class="big-tip-text">
+      객실 전화로 <strong style="color:var(--gold)">"0"</strong> 누르면 게스트 리셉션 연결<br>
+      의무실은 Deck 5 (선내 지도 참고)<br><br>
+      리셉션 가서 이렇게 말씀하세요 👇<br>
+      <span style="font-size:1.15rem; color:var(--gold); font-weight:900; letter-spacing:1px;">"코리안 스태프 플리즈!"</span><br>
+      <span style="font-size:0.85rem; opacity:0.6;">"Korean Staff, Please!"</span><br>
+      <span style="font-size:0.85rem; opacity:0.75;">코스타에는 한국인 직원이 많아요 😊</span>
+    </div>
   </div>
 
 </div>
 
-<!-- ════════════════════ TAB 2: 기륭 ════════════════════ -->
+<!-- ════════════════════ TAB 부산 ════════════════════ -->
+<div id="tab-busan" class="section">
+  <p class="section-title">🇰🇷 부산 승선 안내</p>
+  <p class="section-sub">5월 22일 출항 · 처음 타는 분도 걱정 없어요</p>
+
+  <!-- 부산항 기본 정보 -->
+  <div class="card navy">
+    <div class="card-header">
+      <span class="card-icon">🚢</span>
+      <div>
+        <div class="card-title">부산항 국제크루즈터미널</div>
+        <div class="card-subtitle">부산시 중구 충장대로 · 영도 맞은편</div>
+      </div>
+    </div>
+    <div class="info-row">
+      <span class="info-label">📍 위치</span>
+      <span class="info-value">부산항 제1부두 국제크루즈터미널<br>(부산 중구 충장대로 206)</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">🚌 교통</span>
+      <span class="info-value">택시 추천 (부산역에서 약 10분)<br>부산역·남포동에서 도보 15~20분</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">🅿️ 주차</span>
+      <span class="info-value">터미널 인근 유료 주차장 이용 가능<br>(장기 주차 시 사전 예약 추천)</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">🌡️ 날씨</span>
+      <span class="info-value">5월 부산 18~24도 · 바람 있을 수 있어요</span>
+    </div>
+  </div>
+
+  <!-- 승선 당일 타임라인 -->
+  <div class="card">
+    <div class="card-header">
+      <span class="card-icon">⏰</span>
+      <div>
+        <div class="card-title">승선 당일 흐름</div>
+        <div class="card-subtitle">5월 22일 (목) · 순서대로 따라오세요</div>
+      </div>
+    </div>
+    <div class="walk-steps">
+      <div class="walk-step">
+        <div class="step-line">
+          <div class="step-num" style="background:var(--gold);">1</div>
+          <div class="step-connector"></div>
+        </div>
+        <div class="step-content">
+          <div class="step-place">🏢 터미널 도착</div>
+          <div class="step-desc">출항 <strong>3시간 전</strong>까지 터미널 도착 권장. 짐이 많으면 일찍 오세요!</div>
+          <span class="step-time">⏱ 출항 2~3시간 전</span>
+        </div>
+      </div>
+      <div class="walk-step">
+        <div class="step-line">
+          <div class="step-num" style="background:var(--gold);">2</div>
+          <div class="step-connector"></div>
+        </div>
+        <div class="step-content">
+          <div class="step-place">🧳 수하물 위탁</div>
+          <div class="step-desc">큰 짐은 터미널 입구 짐 위탁 카운터에 맡기세요. 객실 번호 태그 붙여서 제출 → 방까지 배달돼요</div>
+          <span class="step-time">⏱ 5~10분</span>
+        </div>
+      </div>
+      <div class="walk-step">
+        <div class="step-line">
+          <div class="step-num" style="background:var(--gold);">3</div>
+          <div class="step-connector"></div>
+        </div>
+        <div class="step-content">
+          <div class="step-place">🛃 체크인 · 보안검색</div>
+          <div class="step-desc"><strong>여권 필수 지참!</strong> 체크인 카운터에서 승선 카드(크루즈 카드) 수령. 이후 보안검색 통과</div>
+          <span class="step-time">⏱ 15~30분 (줄 상황에 따라)</span>
+        </div>
+      </div>
+      <div class="walk-step">
+        <div class="step-line">
+          <div class="step-num" style="background:var(--gold);">4</div>
+          <div class="step-connector"></div>
+        </div>
+        <div class="step-content">
+          <div class="step-place">📸 탑승 기념사진</div>
+          <div class="step-desc">갱웨이(배로 이어지는 통로) 입구에서 사진 찍어드려요. 나중에 선내 사진 가게에서 구입 가능 (선택)</div>
+          <span class="step-time">⏱ 잠깐</span>
+        </div>
+      </div>
+      <div class="walk-step">
+        <div class="step-line">
+          <div class="step-num" style="background:var(--navy);">🚢</div>
+          <div class="step-connector" style="display:none;"></div>
+        </div>
+        <div class="step-content">
+          <div class="step-place">🎉 승선 완료!</div>
+          <div class="step-desc">배에 오르면 안내 방송 따라 <strong>비상 안전훈련(필수)</strong> 참여. 이후 자유롭게 배 탐색하세요</div>
+          <span class="step-time">⏱ 안전훈련 약 20~30분</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 승선 시 꿀팁 -->
+  <div class="card mint">
+    <div class="card-header">
+      <span class="card-icon">💡</span>
+      <div>
+        <div class="card-title">승선 꿀팁</div>
+      </div>
+    </div>
+    <div class="info-row">
+      <span class="info-label">🃏 카드</span>
+      <span class="info-value">받은 크루즈 카드는 절대 잃어버리지 마세요. 방 열쇠 + 결제 + 출입 패스 역할</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">🧳 짐</span>
+      <span class="info-value">위탁 짐은 오후 늦게 도착해요. 당일 필요한 것(약, 세면도구)은 작은 가방에 따로 챙기세요</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">🍽️ 첫 식사</span>
+      <span class="info-value">승선 후 바로 뷔페 이용 가능. 배고프면 올라가세요!</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">🪑 저녁 좌석</span>
+      <span class="info-value">리셉션에서 <strong>"2인 테이블 같이"</strong> 요청 꼭 하기</span>
+    </div>
+  </div>
+
+  <!-- 한국어 직원 안내 -->
+  <div class="big-tip">
+    <div class="big-tip-icon">🗣️</div>
+    <div class="big-tip-title">도움이 필요할 때</div>
+    <div class="big-tip-text">
+      게스트 리셉션 데스크로 가서<br>
+      이렇게 말씀하세요 👇<br><br>
+      <span style="font-size:1.3rem; color:var(--gold); font-weight:900; letter-spacing:2px;">"코리안 스태프 플리즈!"</span><br>
+      <span style="font-size:0.85rem; opacity:0.6;">"Korean Staff, Please!"</span><br><br>
+      <span style="font-size:0.9rem; opacity:0.8;">코스타 세레나에는 한국인 직원이 많아요.<br>한국어로 편하게 도움받으실 수 있어요 😊</span>
+    </div>
+  </div>
+
+  <!-- 하선 정보 -->
+  <div class="card coral">
+    <div class="card-header">
+      <span class="card-icon">🏁</span>
+      <div>
+        <div class="card-title">부산 귀항 (하선 안내)</div>
+        <div class="card-subtitle">크루즈 마지막 날</div>
+      </div>
+    </div>
+    <div class="info-row">
+      <span class="info-label">🌙 전날 밤</span>
+      <span class="info-value">짐을 미리 싸서 객실 문 앞에 내놓으세요. 다음날 아침 터미널로 이동돼요 (귀중품·여권은 직접 들고)</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">🎟️ 하선 번호</span>
+      <span class="info-value">전날 저녁 객실로 하선 번호표 배달됨. 번호 순서대로 내려요 (서두르지 않아도 돼요)</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">⏰ 시간</span>
+      <span class="info-value">보통 오전 7시~10시 사이 순차 하선<br>마지막 하선은 보통 10시 이전</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">🛃 입국</span>
+      <span class="info-value">부산항 터미널에서 여권 검사 후 귀국 완료!<br>짐은 컨베이어 벨트 또는 지정 구역에서 찾기</span>
+    </div>
+    <div class="warn-box" style="margin-top:12px;">
+      <span class="warn-icon">⚠️</span>
+      <span>하선 날 아침은 식당이 일찍 닫혀요. <strong>아침 일찍</strong> 드시고 내리세요!</span>
+    </div>
+  </div>
+
+</div>
 <div id="tab-keelung" class="section">
   <p class="section-title">🇹🇼 기륭 (基隆) 도보 코스</p>
   <p class="section-sub">타이완 북부 항구도시 · 두 분이 함께 걸어요</p>
@@ -742,16 +922,77 @@
         <div class="card-subtitle">도보 약 10분 · 평지 코스</div>
       </div>
     </div>
-    <div style="border-radius:12px; overflow:hidden; margin-top:4px; border:2px solid #E8E0D4;">
-      <iframe
-        src="https://maps.google.com/maps?saddr=25.13456,121.74107&daddr=25.12824,121.74356&dirflg=w&output=embed&hl=ko"
-        width="100%"
-        height="320"
-        style="border:none; display:block;"
-        loading="lazy"
-        allowfullscreen
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
+    <div style="border-radius:12px; overflow:hidden; margin-top:4px; border:2px solid #E8E0D4; background:#e8f4f0;">
+      <svg viewBox="0 0 340 260" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;font-family:'Noto Sans KR',sans-serif;">
+        <!-- 배경 -->
+        <rect width="340" height="260" fill="#e8f4f0"/>
+        <!-- 바다 -->
+        <rect width="340" height="260" fill="#c8e6f5" opacity="0.5"/>
+        <!-- 육지 블록들 -->
+        <rect x="0" y="0" width="340" height="260" fill="#dff0e8"/>
+        <!-- 항구 부두 영역 -->
+        <rect x="10" y="10" width="130" height="70" rx="6" fill="#b8d4c8" stroke="#8ab8a8" stroke-width="1.5"/>
+        <text x="75" y="35" text-anchor="middle" font-size="9" fill="#2a5c4a" font-weight="700">기륭 항구</text>
+        <text x="75" y="48" text-anchor="middle" font-size="8" fill="#2a5c4a">Keelung Harbor</text>
+        <!-- 부두 직사각형들 -->
+        <rect x="15" y="55" width="30" height="18" rx="3" fill="#8ab8a8"/>
+        <rect x="50" y="55" width="30" height="18" rx="3" fill="#8ab8a8"/>
+        <rect x="85" y="55" width="30" height="18" rx="3" fill="#8ab8a8"/>
+
+        <!-- 도로들 -->
+        <line x1="145" y1="45" x2="230" y2="45" stroke="#f5f0e8" stroke-width="10"/>
+        <line x1="145" y1="45" x2="230" y2="45" stroke="#e0d8c8" stroke-width="1" stroke-dasharray="6,4"/>
+        <line x1="200" y1="45" x2="200" y2="180" stroke="#f5f0e8" stroke-width="10"/>
+        <line x1="200" y1="45" x2="200" y2="180" stroke="#e0d8c8" stroke-width="1" stroke-dasharray="6,4"/>
+        <line x1="80" y1="80" x2="80" y2="180" stroke="#f5f0e8" stroke-width="10"/>
+        <line x1="80" y1="80" x2="80" y2="180" stroke="#e0d8c8" stroke-width="1" stroke-dasharray="6,4"/>
+        <line x1="80" y1="180" x2="200" y2="180" stroke="#f5f0e8" stroke-width="10"/>
+        <line x1="80" y1="180" x2="200" y2="180" stroke="#e0d8c8" stroke-width="1" stroke-dasharray="6,4"/>
+
+        <!-- 도로 이름 -->
+        <text x="188" y="118" font-size="7.5" fill="#888" transform="rotate(-90,188,118)" text-anchor="middle">中正路</text>
+        <text x="140" y="176" font-size="7.5" fill="#888" text-anchor="middle">忠一路</text>
+
+        <!-- 도보 경로 (빨간 점선) -->
+        <polyline points="75,75 75,180 200,180 200,145" fill="none" stroke="#E8734A" stroke-width="3.5" stroke-dasharray="8,5" stroke-linecap="round"/>
+        <!-- 경로 방향 화살표 -->
+        <polygon points="200,140 195,152 205,152" fill="#E8734A"/>
+
+        <!-- 출발 핀: 터미널 -->
+        <circle cx="75" cy="75" r="14" fill="#1B3A5C" stroke="white" stroke-width="2"/>
+        <text x="75" y="79" text-anchor="middle" font-size="10" fill="white">🚢</text>
+        <rect x="28" y="93" width="94" height="28" rx="5" fill="#1B3A5C"/>
+        <text x="75" y="104" text-anchor="middle" font-size="8" fill="white" font-weight="700">크루즈 터미널</text>
+        <text x="75" y="115" text-anchor="middle" font-size="7" fill="#aac0d0">서여객터미널</text>
+
+        <!-- 도착 핀: 묘구 야시장 -->
+        <circle cx="200" cy="145" r="14" fill="#D4A94A" stroke="white" stroke-width="2"/>
+        <text x="200" y="149" text-anchor="middle" font-size="10" fill="white">🍜</text>
+        <rect x="154" y="163" width="92" height="28" rx="5" fill="#D4A94A"/>
+        <text x="200" y="174" text-anchor="middle" font-size="8" fill="white" font-weight="700">묘구 야시장</text>
+        <text x="200" y="185" text-anchor="middle" font-size="7" fill="#fff8e0">廟口夜市</text>
+
+        <!-- 도보 시간 뱃지 -->
+        <rect x="100" y="165" width="72" height="22" rx="11" fill="#E8734A"/>
+        <text x="136" y="180" text-anchor="middle" font-size="9" fill="white" font-weight="700">🚶 도보 10분</text>
+
+        <!-- 범례 -->
+        <rect x="240" y="10" width="92" height="68" rx="8" fill="white" opacity="0.85"/>
+        <text x="286" y="26" text-anchor="middle" font-size="8" fill="#1B3A5C" font-weight="700">범례</text>
+        <circle cx="253" cy="39" r="5" fill="#1B3A5C"/>
+        <text x="263" y="43" font-size="7.5" fill="#333">출발지</text>
+        <circle cx="253" cy="53" r="5" fill="#D4A94A"/>
+        <text x="263" y="57" font-size="7.5" fill="#333">도착지</text>
+        <line x1="247" y1="67" x2="263" y2="67" stroke="#E8734A" stroke-width="2.5" stroke-dasharray="5,3"/>
+        <text x="268" y="70" font-size="7.5" fill="#333">도보경로</text>
+
+        <!-- 나침반 -->
+        <circle cx="300" cy="220" r="16" fill="white" opacity="0.8"/>
+        <text x="300" y="212" text-anchor="middle" font-size="7" fill="#1B3A5C" font-weight="700">N</text>
+        <line x1="300" y1="214" x2="300" y2="224" stroke="#E8734A" stroke-width="2"/>
+        <line x1="300" y1="224" x2="300" y2="234" stroke="#aaa" stroke-width="2"/>
+        <text x="300" y="240" text-anchor="middle" font-size="7" fill="#888">S</text>
+      </svg>
     </div>
     <div style="display:flex; gap:8px; margin-top:12px; flex-wrap:wrap;">
       <div style="background:var(--light-bg); border-radius:8px; padding:8px 12px; font-size:0.88rem; flex:1; text-align:center;">
@@ -949,16 +1190,81 @@
         <div class="card-subtitle">전체 도보 코스 지도</div>
       </div>
     </div>
-    <div style="border-radius:12px; overflow:hidden; margin-top:4px; border:2px solid #E8E0D4;">
-      <iframe
-        src="https://maps.google.com/maps?saddr=32.7368,129.8682&daddr=32.7415,129.8753+to:32.7343,129.8692&dirflg=w&output=embed&hl=ko"
-        width="100%"
-        height="320"
-        style="border:none; display:block;"
-        loading="lazy"
-        allowfullscreen
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
+    <div style="border-radius:12px; overflow:hidden; margin-top:4px; border:2px solid #E8E0D4; background:#eef3f8;">
+      <svg viewBox="0 0 340 290" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;font-family:'Noto Sans KR',sans-serif;">
+        <!-- 배경 육지 -->
+        <rect width="340" height="290" fill="#dff0e8"/>
+        <!-- 항구 바다 쪽 -->
+        <rect x="0" y="0" width="110" height="120" rx="0" fill="#c8e6f5" opacity="0.6"/>
+
+        <!-- 도로망 -->
+        <line x1="110" y1="60" x2="280" y2="60" stroke="#f5f0e8" stroke-width="9"/>
+        <line x1="110" y1="60" x2="280" y2="60" stroke="#ddd" stroke-width="0.8" stroke-dasharray="5,4"/>
+        <line x1="160" y1="60" x2="160" y2="200" stroke="#f5f0e8" stroke-width="9"/>
+        <line x1="160" y1="60" x2="160" y2="200" stroke="#ddd" stroke-width="0.8" stroke-dasharray="5,4"/>
+        <line x1="100" y1="150" x2="260" y2="150" stroke="#f5f0e8" stroke-width="9"/>
+        <line x1="100" y1="150" x2="260" y2="150" stroke="#ddd" stroke-width="0.8" stroke-dasharray="5,4"/>
+        <line x1="240" y1="60" x2="240" y2="230" stroke="#f5f0e8" stroke-width="9"/>
+        <line x1="240" y1="60" x2="240" y2="230" stroke="#ddd" stroke-width="0.8" stroke-dasharray="5,4"/>
+
+        <!-- 도로명 -->
+        <text x="148" y="110" font-size="7" fill="#999" transform="rotate(-90,148,110)" text-anchor="middle">中通り</text>
+        <text x="180" y="147" font-size="7" fill="#999" text-anchor="middle">新地通り</text>
+        <text x="228" y="148" font-size="7" fill="#999" transform="rotate(-90,228,148)" text-anchor="middle">グラバー通り</text>
+
+        <!-- 전차 노선 (파란 굵은 선) -->
+        <line x1="60" y1="90" x2="260" y2="90" stroke="#4a90d9" stroke-width="4" opacity="0.7"/>
+        <rect x="50" y="83" width="40" height="14" rx="4" fill="#4a90d9" opacity="0.85"/>
+        <text x="70" y="93" text-anchor="middle" font-size="7" fill="white" font-weight="700">🚃 전차</text>
+
+        <!-- 도보 경로 -->
+        <polyline points="75,60 160,60 160,150 240,150 240,210" fill="none" stroke="#E8734A" stroke-width="3.5" stroke-dasharray="8,5" stroke-linecap="round"/>
+        <polygon points="240,205 235,218 245,218" fill="#E8734A"/>
+
+        <!-- 출발: 마쓰가에 터미널 -->
+        <circle cx="75" cy="60" r="14" fill="#1B3A5C" stroke="white" stroke-width="2"/>
+        <text x="75" y="64" text-anchor="middle" font-size="10" fill="white">🚢</text>
+        <rect x="22" y="77" width="106" height="28" rx="5" fill="#1B3A5C"/>
+        <text x="75" y="88" text-anchor="middle" font-size="8" fill="white" font-weight="700">마쓰가에 터미널</text>
+        <text x="75" y="99" text-anchor="middle" font-size="7" fill="#aac0d0">松が枝ターミナル</text>
+
+        <!-- 중간: 차이나타운 -->
+        <circle cx="160" cy="150" r="13" fill="#4BA89A" stroke="white" stroke-width="2"/>
+        <text x="160" y="154" text-anchor="middle" font-size="10" fill="white">🏮</text>
+        <rect x="110" y="165" width="100" height="26" rx="5" fill="#4BA89A"/>
+        <text x="160" y="176" text-anchor="middle" font-size="8" fill="white" font-weight="700">신치 차이나타운</text>
+        <text x="160" y="186" text-anchor="middle" font-size="7" fill="#d0f0ec">도보 15분</text>
+
+        <!-- 도착: 글로버 가든 -->
+        <circle cx="240" cy="210" r="13" fill="#D4A94A" stroke="white" stroke-width="2"/>
+        <text x="240" y="214" text-anchor="middle" font-size="10" fill="white">🌸</text>
+        <rect x="190" y="226" width="100" height="26" rx="5" fill="#D4A94A"/>
+        <text x="240" y="237" text-anchor="middle" font-size="8" fill="white" font-weight="700">글로버 가든</text>
+        <text x="240" y="247" text-anchor="middle" font-size="7" fill="#fff8e0">전차 20분</text>
+
+        <!-- 구간 시간 뱃지 -->
+        <rect x="100" y="54" width="72" height="18" rx="9" fill="#E8734A" opacity="0.9"/>
+        <text x="136" y="66" text-anchor="middle" font-size="8" fill="white" font-weight="700">🚶 도보 15분</text>
+
+        <!-- 범례 -->
+        <rect x="6" y="210" width="100" height="72" rx="8" fill="white" opacity="0.85"/>
+        <text x="56" y="224" text-anchor="middle" font-size="8" fill="#1B3A5C" font-weight="700">범례</text>
+        <circle cx="18" cy="236" r="4.5" fill="#1B3A5C"/><text x="27" y="239" font-size="7" fill="#333">출발지</text>
+        <circle cx="18" cy="250" r="4.5" fill="#4BA89A"/><text x="27" y="253" font-size="7" fill="#333">경유지</text>
+        <circle cx="18" cy="264" r="4.5" fill="#D4A94A"/><text x="27" y="267" font-size="7" fill="#333">도착지</text>
+        <line x1="11" y1="276" x2="24" y2="276" stroke="#E8734A" stroke-width="2.5" stroke-dasharray="5,3"/>
+        <text x="28" y="279" font-size="7" fill="#333">도보경로</text>
+        <line x1="11" y1="275" x2="24" y2="275" stroke="#4a90d9" stroke-width="3" opacity="0.7" y2="289" y1="289"/>
+        <line x1="11" y1="289" x2="24" y2="289" stroke="#4a90d9" stroke-width="2.5" opacity="0.7"/>
+        <text x="28" y="292" font-size="7" fill="#333">전차노선</text>
+
+        <!-- 나침반 -->
+        <circle cx="314" cy="258" r="16" fill="white" opacity="0.8"/>
+        <text x="314" y="250" text-anchor="middle" font-size="7" fill="#1B3A5C" font-weight="700">N</text>
+        <line x1="314" y1="252" x2="314" y2="262" stroke="#E8734A" stroke-width="2"/>
+        <line x1="314" y1="262" x2="314" y2="272" stroke="#aaa" stroke-width="2"/>
+        <text x="314" y="278" text-anchor="middle" font-size="7" fill="#888">S</text>
+      </svg>
     </div>
     <div style="display:flex; gap:6px; margin-top:12px; flex-wrap:wrap;">
       <div style="background:var(--light-bg); border-radius:8px; padding:8px 10px; font-size:0.84rem; flex:1; text-align:center;">
